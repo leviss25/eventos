@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Créditos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SIMULADOR DE CRÉTIDOS</h1>
+        <form action="" method="post" id="formcreditos">
+            <label class="etiqueta" for="dni">DNI: 
+                <span class="campo-texto">
+                    <input type="text" class="campo" name="dni" placeholder="DNI" id="iddni">
+                </span>
+            </label>
+            <label class="etiqueta" for="credito">Crédito: 
+                <span class="campo-texto">
+                    <select name="credito" id="creditos" onchange="detallecredito();">
+                        
+                    </select>
+                </span>
+            </label>
+            <br>
+            <label class="etiqueta" for="detalle">Detalle Cédito: 
+                <span class="campo-texto" id="detallecredito">
+                    Detalle de Crédito
+                </span>
+            </label>
+            <br>
+            <label class="etiqueta" for="monto">Monto Cédito: 
+                <span class="campo-texto">
+                    <input type="text" class="campo" name="monto" placeholder="Monto crédito" id="idmonto">
+                </span>
+            </label>
+            <label class="etiqueta" for="cuotas">Número cuotas: 
+                <span class="campo-texto">
+                    <input type="text" class="campo" name="cuotas" placeholder="" id="idnrocuotas">
+                </span>
+            </label>
+            <button type="submit" class="btn_enviar">Solicitar</button>
+        </form>
+    </div><br><br>
+    <div id="divsimulacion" class="row">
+        <div>| N° | Capital | Seguro | ITF | Cuota |</div>
+    </div>
+</body>
+<script src="./assets/js/index.js"></script>
+</html>
